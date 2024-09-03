@@ -3,7 +3,7 @@ import { SignIn } from "@clerk/nextjs";
 import { Metadata } from "next";
 
 export const metadatra: Metadata = {
-  title: "Sign In | NoteAI",
+  title: "Sign In | NoteAi",
 };
 
 export default function Page() {

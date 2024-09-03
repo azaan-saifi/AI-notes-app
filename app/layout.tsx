@@ -7,7 +7,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NoteAI",
+  title: "NoteAi",
   description: "The intelligent note taking app.",
 };
 
@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      signInFallbackRedirectUrl="/notes"
+      signUpFallbackRedirectUrl="/notes"
+    >
       <html lang="en">
         <body className={inter.className}>{children}</body>
       </html>

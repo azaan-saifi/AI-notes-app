@@ -2,7 +2,7 @@ import { SignUp } from "@clerk/nextjs";
 import { Metadata } from "next";
 
 export const metadatra: Metadata = {
-  title: "Sign Un | NoteAI",
+  title: "Sign Un | NoteAi",
 };
 
 export default function Page() {
