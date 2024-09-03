@@ -5,3 +5,11 @@ export const notesSchema = z.object({
 });
 
 export type NotesSchema = z.infer<typeof notesSchema>;
+
+export const updateSchema = notesSchema.extend({
+  id: z.string().min(1),
+});
+
+export const deleteSchema = z.object({
+  id: z.string().min(1),
+});

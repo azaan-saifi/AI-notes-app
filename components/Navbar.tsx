@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Plus } from "lucide-react";
-import AddNoteDialog from "./AddNoteDialog";
+import AddEditNoteDialog from "./AddEditNoteDialog";
 
 const Navbar = () => {
   const [showAddNoteDialog, setShowAddNoteDialog] = useState(false);
@@ -34,7 +34,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <AddNoteDialog open={showAddNoteDialog} setOpen={setShowAddNoteDialog} />
+      <AddEditNoteDialog
+        open={showAddNoteDialog}
+        setOpen={setShowAddNoteDialog}
+      />
     </>
   );
 };
